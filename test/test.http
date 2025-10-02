@@ -1,19 +1,20 @@
 
 ### Simple GET Request
-GET http://example.com/api/data
+GET https://jsonplaceholder.typicode.com/todos
 Accept: application/json
 Cache-Control: no-cache
 
 ###
 
 ### POST Request with JSON Body
-POST http://example.com/api/users
-Content-Type: application/json
+POST https://jsonplaceholder.typicode.com/todos
+Content-Type: application/json; charset=UTF-8
 Authorization: Bearer your_access_token_here
 
 {
-  "name": "John Doe",
-  "email": "john.doe@example.com"
+  "title": "John Doe",
+  "body": "BODY",
+  "userId": "1"
 }
 
 ###

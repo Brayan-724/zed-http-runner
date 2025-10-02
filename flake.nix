@@ -19,6 +19,9 @@
         # # Rust toolchain
         rustToolchain
 
+        go
+        gopls
+
         # Development tools
         git
         curl
