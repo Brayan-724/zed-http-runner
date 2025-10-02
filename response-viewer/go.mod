@@ -1,8 +1,6 @@
 module zed-http-response-viewer
 
-go 1.23.0
-
-toolchain go1.23.6
+go 1.23
 
 require (
 	github.com/antonmedv/clipboard v1.0.1
