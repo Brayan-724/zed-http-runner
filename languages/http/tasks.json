@@ -1,7 +1,7 @@
 [
   {
     "label": "$ZED_CUSTOM_method $ZED_CUSTOM_target_url",
-    "command": "(cat <<ZED_INPUT_EOF\n $ZED_CUSTOM_request\nZED_INPUT_EOF\n) | ./response-viewer/zed-http-response-viewer",
+    "command": "(cat <<ZED_INPUT_EOF\n $ZED_CUSTOM_request\nZED_INPUT_EOF\n) | /tmp/zed-http-response-viewer",
     "cwd": "$ZED_WORKTREE_ROOT",
     "tags": ["http-target"],
     "shell": {

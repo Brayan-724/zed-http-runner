@@ -1,11 +1,14 @@
-id = "http"
-name = "http"
-description = "Highlights .http files"
-version = "0.0.1"
+id = "http-runner"
+name = "http-runner"
+description = "Fully support for .http files"
+version = "1.0.0"
 schema_version = 1
-authors = ["tylerhanson921@gmail.com"]
-repository = "https://github.com/tie304/zed-http"
+authors = ["bjqf0724@gmail.com"]
+repository = "https://github.com/Brayan-724/zed-http-runner"
 
+[language_servers.http]
+name = "http"
+language = "http"
 
 [grammars.http]
 repository = "http://github.com/rest-nvim/tree-sitter-http"
