@@ -38,6 +38,18 @@ func main() {
 		case "-v", "-V", "--version":
 			fmt.Println(version)
 			return
+		case "--setup":
+			exe, err := os.Executable()
+			if err != nil {
+				fmt.Println(err.Error())
+				return
+			}
+			err = os.Symlink(exe, "/tmp/zed-http-response-viewer")
+			if err != nil {
+				fmt.Println(err.Error())
+				return
+			}
+			return
 		default:
 			args = append(args, arg)
 		}
